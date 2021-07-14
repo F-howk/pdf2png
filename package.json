@@ -1,0 +1,29 @@
+{
+  "name": "pdftoimg",
+  "version": "0.0.1",
+  "description": "PDF转图片",
+  "main": "./dist/pdf2png.js",
+  "dependencies": {
+    "pdfjs-dist": "2.0.943"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "babel": "babel src --out-dir dist",
+    "serve": "webpack serve --config webpack.dev.js"
+  },
+  "keywords": [],
+  "files":["dist/pdf2png.js"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "html-loader": "1.3.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
